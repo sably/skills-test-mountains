@@ -158,6 +158,7 @@ https://flickity.metafizzy.co
 .carousel-cell-image {
   transition: opacity 0.4s;
   opacity: 0;
+  aspect-ratio: 44/27;
 }
 
 .carousel-cell-image.flickity-lazyloaded,

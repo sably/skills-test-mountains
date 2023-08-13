@@ -28,5 +28,43 @@ footer .colory-logo {
   display: none;
 }
 
-.xxx {
+details summary::-webkit-details-marker {
+  display: none;
+}
+::marker {
+  display: none;
+}
+summary {
+  list-style: none;
+}
+
+.icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  opacity: 0.4;
+  margin-left: 10px;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon.plus {
+  background-image: url(/images/icon/plus.svg);
+  margin: 0;
+  transition: 0.2s;
+}
+.is-active .expand.plus {
+  background-image: url(/images/icon/minus.svg);
+}
+.TabButtons-listItem[aria-selected="true"] {
+  @apply bg-[#b0b4be];
+}
+
+.TabButtons-listItem[aria-selected="true"] a {
+  border-bottom: 1px solid #414f6b;
+  color: #414f6b;
+}
+.text-shadow {
+  text-shadow: 1px 0 #414f6b;
+  color: #414f6b;
 }

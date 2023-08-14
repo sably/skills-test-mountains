@@ -29,7 +29,7 @@ export default function Home() {
           />
         </div>
         <img src="/images/history.jpg" />
-        <div className="fffffffffffffffff max-sm:relative max-sm:bg-[#fff] pt-1 sm:pt-7 pb-10 bg-[#1216408a] absolute w-full bottom-0">
+        <div className="max-sm:relative max-sm:bg-[#fff] pt-1 sm:pt-7 pb-10 bg-[#1216408a] absolute w-full bottom-0">
           <Carousel />
         </div>
       </section>

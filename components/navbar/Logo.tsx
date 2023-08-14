@@ -25,14 +25,14 @@ const Logo: React.FC<LogoProps> = ({ isFooter }) => {
       <Image
         onClick={() => router.push("/")}
         className=" cursor-pointer text-logo colory-logo"
-        src="/images/logo2.svg"
+        src="/images/textLogo.svg"
         height="100"
         width="90"
         alt="Losangeles"
       />
       <Image
         className="max-sm:hidden cursor-pointer text-logo white-logo"
-        src="/images/logo3.svg"
+        src="/images/textLogoWhite.svg"
         height="100"
         width="90"
         alt="Losangeles"

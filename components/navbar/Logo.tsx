@@ -1,9 +1,8 @@
 "use client";
-
-import { cn } from "@/lib/utils";
+import React from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import React from "react";
+import { cn } from "@/lib/utils";
 
 interface LogoProps {
   isFooter?: boolean;

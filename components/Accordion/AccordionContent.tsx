@@ -1,16 +1,16 @@
-import { cn } from "@/lib/utils";
 import React from "react";
+import { cn } from "@/lib/utils";
 interface AccordionContentProps {
-  asTab: any;
-  children: React.ReactNode;
-  handleToggle: any;
-  heading: any;
-  id: any;
-  index: any;
-  open: any;
+  asTab?: boolean;
+  children?: React.ReactNode;
+  handleToggle?: Function;
+  heading?: string;
+  id: string;
+  index: number;
+  open?: boolean;
 }
 
-export default function AccordionPanel({
+export default function AccordionContent({
   asTab,
   children,
   handleToggle,
@@ -19,7 +19,6 @@ export default function AccordionPanel({
   index,
   open,
 }: AccordionContentProps) {
-  // console.log(index, 'AccordionPanel open:', open);
   if (asTab) {
     return !open ? null : (
       <div

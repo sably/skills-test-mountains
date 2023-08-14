@@ -1,10 +1,7 @@
 "use client";
-
 import LeftNavbar from "./NavberLinks";
 import Logo from "./Logo";
 import { cn } from "@/lib/utils";
-import useScroll from "@/hooks/useScroll";
-
 interface NavbarProps {
   simpleNav?: boolean;
   sticky?: boolean;

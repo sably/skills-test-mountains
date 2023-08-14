@@ -8,14 +8,11 @@ const panelItems = [
     open: true,
     heading: "MOUNTAIN 1",
     bgImg: "/images/accordian/accordian-1.jpg",
-    content: <></>,
   },
   {
     id: "MONTAIN-2",
     heading: "MOUNTAIN 2",
     bgImg: "/images/accordian/accordian-2.jpg",
-
-    content: <p></p>,
   },
 ];
 

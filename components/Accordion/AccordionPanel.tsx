@@ -25,27 +25,24 @@ const scheduleItems = [
   },
 ];
 
-interface AccordionProps {
+interface AccordionPanelProps {
   asTabs?: boolean;
   onlyOneOpenAccordion?: boolean;
-  panels: AccordionPanel[];
+  panels: Panel[];
 }
 
-interface AccordionPanel {
-  // children: React.ReactNode;
-  content: React.ReactNode;
+interface Panel {
   heading: string;
-  id?: string;
+  id: string;
   bgImg: string;
-  // index: number;
   open?: boolean;
 }
 
-export default function Accordion({
+export default function AccordionPanel({
   asTabs,
   onlyOneOpenAccordion = true,
   panels,
-}: AccordionProps) {
+}: AccordionPanelProps) {
   const canClose = !asTabs;
   const onlyOneOpen = asTabs || onlyOneOpenAccordion;
 
@@ -74,7 +71,7 @@ export default function Accordion({
             role="tablist"
             className="TabButtons-list flex px-16 my-0 mx-auto max-w-[1200px]"
           >
-            {panels.map(({ content, heading, id, open }, i) => (
+            {panels.map(({ heading, id }, i) => (
               <li
                 key={i}
                 aria-selected={isIndexOpen(i)}
@@ -100,7 +97,7 @@ export default function Accordion({
           </ul>
         </div>
       )}
-      {panels.map(({ bgImg, content, heading, id, open }, i) => (
+      {panels.map(({ bgImg, heading, id, open }, i) => (
         <AccordionContent
           asTab={asTabs}
           handleToggle={onlyOneOpen ? handleToggle : undefined}
@@ -110,11 +107,10 @@ export default function Accordion({
           key={i}
           open={onlyOneOpen ? isIndexOpen(i) : open}
         >
-          <div className="ggggggggggggggg lg:float-left">
+          <div className="ggggggggggggggg ">
             <img src={bgImg} className="sm:object-cover sm:min-h-[250px]" />
             <div className="max-w-[1200px]"></div>
           </div>
-          {content}
           {<Schedule scheduleItem={scheduleItems[i]} />}
         </AccordionContent>
       ))}

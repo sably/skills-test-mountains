@@ -10,7 +10,7 @@ const NavbarLinks = () => {
         01. HISTORY
       </a>
       <a
-        href="#History"
+        href="#Team"
         className="border-b border-blue-900 text-blue-900 font-bold"
       >
         02. TEAM

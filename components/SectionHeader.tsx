@@ -1,5 +1,4 @@
 "use client";
-
 import { cn } from "@/lib/utils";
 // import { Bebas_Neue } from "next/font/google";
 import { Oswald } from "next/font/google";
@@ -9,7 +8,19 @@ const OswaldFont = Oswald({
   subsets: ["latin"],
 });
 
-const SectionTitre = ({ secNum, title, content, freeExpand }: any) => {
+interface SectionHeaderProps {
+  secNum: string;
+  title: string;
+  content: string;
+  freeExpand?: boolean;
+}
+
+const SectionHeader = ({
+  secNum,
+  title,
+  content,
+  freeExpand,
+}: SectionHeaderProps) => {
   return (
     <div className={cn(freeExpand ? "lg:flex flex-col" : "flex")}>
       <div
@@ -34,16 +45,16 @@ const SectionTitre = ({ secNum, title, content, freeExpand }: any) => {
         </div>
       </div>
 
-      <div
+      <p
         className={cn(
           "self-center text-[12px] md:m-0",
           freeExpand && "pt-[14px] lg:pt-[0] lg:px-[64px] "
         )}
       >
         {content}
-      </div>
+      </p>
     </div>
   );
 };
 
-export default SectionTitre;
+export default SectionHeader;

@@ -5,6 +5,9 @@ body {
   max-width: 1600px;
   margin: 0 auto;
 }
+html {
+  scroll-padding-top: 58px; /* height of sticky header */
+}
 
 .simple-nav .text-logo {
   display: none;

@@ -7,7 +7,6 @@ const flickityOptions = {
   contain: true,
   groupCells: true,
   lazyLoad: 1,
-  // wrapAround: true,
 };
 const imgs = [
   "slide-1.jpg",

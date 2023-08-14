@@ -1,37 +1,27 @@
 import React, { useState } from "react";
 import AccordionContent from "./AccordionContent";
-// import { AccordionProps } from "./accordion";
-// import "./accordion.scss";
 import { Bebas_Neue } from "next/font/google";
 import { cn } from "@/lib/utils";
 import Schedule from "./Schedule";
-import ScheduleModal from "../Modal/ScheduleModal";
 
 const bebas_Neue = Bebas_Neue({ weight: "400", subsets: ["latin"] });
-// const test = [
-//   {
-//     feb: [
-//       ["4 feb 2016", "ahvaz"],
-//       ["23 feb 2016", "yasuj"],
-//     ],
-//     nov: [["12 nov 2016", "tehran"]],
-//   },
-// ];
 
 const scheduleItems = [
   {
-    feb: [
-      ["4 feb 2016", "ahvaz"],
-      ["23 feb 2016", "yasuj"],
+    Nov: [
+      ["25 Nov 2016", "Vestibulum viverra"],
+      ["28 Nov 2016", "Vestibulum viverra"],
     ],
-    nov: [["12 nov 2016", "tehran"]],
+    Dec: [["18 Dec 2016", "Vestibulum viverra"]],
+    jan: [["07 Jan 2017", "Vestibulum viverra"]],
   },
   {
-    feb: [["4 feb 2016", "ahvaz"]],
-    jun: [
-      ["12 nov 2016", "tehrannnn"],
-      ["23 juun 2016", "yasujjjjj"],
+    Nov: [["13 Nov 2016", "Vestibulum viverra"]],
+    Dec: [
+      ["02 Dec 2016", "Vestibulum viverra"],
+      ["29 Dec 2016", "Vestibulum viverra"],
     ],
+    jan: [["16 jan 2017", "Vestibulum viverra"]],
   },
 ];
 
@@ -124,7 +114,6 @@ export default function Accordion({
             <img src={bgImg} className="sm:object-cover sm:min-h-[250px]" />
             <div className="max-w-[1200px]"></div>
           </div>
-          {/* <ScheduleModal content={scheduleItems[i]} /> */}
           {content}
           {<Schedule scheduleItem={scheduleItems[i]} />}
         </AccordionContent>

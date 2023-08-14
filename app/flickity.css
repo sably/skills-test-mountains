@@ -145,6 +145,12 @@ https://flickity.metafizzy.co
   cursor: pointer;
 }
 
+@media not all and (min-width: 640px) {
+  .flickity-page-dots .dot {
+    background: #8d8d8d;
+  }
+}
+
 .flickity-page-dots .dot.is-selected {
   opacity: 1;
 }

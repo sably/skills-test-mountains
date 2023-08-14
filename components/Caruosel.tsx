@@ -6,7 +6,7 @@ const flickityOptions = {
   initialIndex: 0,
   contain: true,
   groupCells: true,
-  lazyLoad: true,
+  lazyLoad: 1,
   // wrapAround: true,
 };
 const imgs = [
@@ -37,7 +37,7 @@ function Carousel() {
       >
         {imgs.map((img, i) => {
           return (
-            <div key={i} className="carousel-cell w-1/3 px-[3px] sm:w-1/4">
+            <div key={i} className="carousel-cell w-[32%] px-[3px] sm:w-1/4">
               <img
                 className="carousel-cell-image"
                 data-flickity-lazyload={`/images/slider/${img}`}

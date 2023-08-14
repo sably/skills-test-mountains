@@ -21,12 +21,12 @@ const Schedule = ({ scheduleItem }: { scheduleItem: ScheduleItem }) => {
           SCHEDULE
         </div>
         <ul className="felx flex-col ">
-          {Object.values(scheduleItem).map((s) => {
+          {Object.values(scheduleItem).map((s, i) => {
             return (
-              <li className="flex flex-col py-2.5">
-                {s?.map((date) => {
+              <li key={i} className="flex flex-col py-2.5">
+                {s?.map((date, index) => {
                   return (
-                    <div className="flex justify-between ">
+                    <div key={index} className="flex justify-between ">
                       {date.map((item) => {
                         return <div>{item}</div>;
                       })}

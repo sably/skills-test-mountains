@@ -27,8 +27,8 @@ const Schedule = ({ scheduleItem }: { scheduleItem: ScheduleItem }) => {
                 {s?.map((date, index) => {
                   return (
                     <div key={index} className="flex justify-between ">
-                      {date.map((item) => {
-                        return <div>{item}</div>;
+                      {date.map((item, index) => {
+                        return <div key={index}>{item}</div>;
                       })}
                     </div>
                   );

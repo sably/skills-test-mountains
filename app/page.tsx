@@ -18,7 +18,7 @@ export default function Home() {
 
       <section className="relative">
         <div
-          id="History"
+          id="01. HISTORY"
           className="my-0 mx-auto max-w-[1200px] md:px-[84px] p-2.5 md:pt-[46px] md:absolute md:left-0 md: right-0  border-t border-solid border-opacity-25 border-[#392b581a]"
         >
           <SectionHeader
@@ -35,7 +35,7 @@ export default function Home() {
       </section>
       <section>
         <div
-          id="Team"
+          id="02. TEAM"
           className="my-0 mx-auto max-w-[1200px] md:px-[84px] p-2.5 border-b border-solid border-opacity-25 border-[#392b581a]"
         >
           <SectionHeader

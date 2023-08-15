@@ -16,10 +16,7 @@ html {
   color: #fff;
   border-color: #fff;
 }
-.simple-nav a:hover {
-  color: white;
-  border-color: white;
-}
+
 footer {
   background-color: #50516b;
   color: #fff;
@@ -57,12 +54,17 @@ summary {
   transition: 0.2s;
 }
 .is-active .expand.plus {
-  background-image: url(/images/icon/minus.svg);
+  transform: rotate(45deg);
 }
 .TabButtons-listItem[aria-selected="true"] {
   @apply bg-[#b0b4be];
 }
-
+.TabButtons-listItem[aria-selected="false"] {
+  @apply hover:bg-[#d16167];
+}
+.TabButtons-listItem[aria-selected="false"]:hover {
+  background: #52607c;
+}
 .TabButtons-listItem[aria-selected="true"] a {
   border-bottom: 1px solid #414f6b;
   color: #414f6b;

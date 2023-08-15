@@ -1,11 +1,15 @@
 "use client";
-import LeftNavbar from "./NavberLinks";
+
+import NavbarLinks from "./NavbarLinks";
 import Logo from "./Logo";
 import { cn } from "@/lib/utils";
+
 interface NavbarProps {
   simpleNav?: boolean;
   sticky?: boolean;
 }
+
+const links = ["01. HISTORY", "02. TEAM"];
 
 const Navbar: React.FC<NavbarProps> = ({ simpleNav }) => {
   return (
@@ -23,7 +27,7 @@ const Navbar: React.FC<NavbarProps> = ({ simpleNav }) => {
           "
         >
           <Logo />
-          <LeftNavbar />
+          <NavbarLinks links={links} simpleNav={simpleNav} />
         </div>
       </div>
     </div>

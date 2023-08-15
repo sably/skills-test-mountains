@@ -10,7 +10,7 @@ interface ScheduleItem {
 
 const Schedule = ({ scheduleItem }: { scheduleItem: ScheduleItem }) => {
   return (
-    <div className="max-w-[1200px] my-0 mx-auto">
+    <div className="max-w-[1200px] my-0 mx-auto lg:absolute lg:left-0 lg:top-0 lg:right-0">
       <div className="sm:absolute md:py-[8px] md:px-[32px] sm:text-[12px] sm:w-[264px] sm:py-0  border-r-2 py-3.5 px-14 sm:px-4 sm:bg-[#ffffffc7] bg-[#fff] sm:top-1/2 sm:left-1/2 sm:transform sm:-translate-x-1/2 sm:-translate-y-1/2 lg:w-[320px] lg:transform-none lg:top-[88px] lg:left-[90px] lg:text-[14px] ">
         <div
           className={cn(

@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import AccordionContent from "./AccordionContent";
 import { Bebas_Neue } from "next/font/google";

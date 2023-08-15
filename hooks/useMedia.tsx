@@ -1,7 +1,8 @@
 "use client";
+
 import { useState, useEffect } from "react";
 
-const useMedia = (query: any) => {
+const useMedia = (query: "string") => {
   const [matches, setMatches] = useState(window.matchMedia(query).matches);
 
   useEffect(() => {

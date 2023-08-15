@@ -1,4 +1,5 @@
 "use client";
+//@ts-ignore
 import Flickity from "react-flickity-component";
 import "@/app/flickity.css";
 

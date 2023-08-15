@@ -36,7 +36,10 @@ const SectionHeader = ({
         <div
           className={cn(
             "text-[80px] md:text-[120px] leading-none font-bold",
-            freeExpand ? "lg:mt-[-10px] text-[#6d7d98]" : " text-[#a0a7b5]"
+            freeExpand
+              ? "lg:mt-[-10px] md:text-[#6d7d98]"
+              : " md:text-[#a0a7b5]",
+            "text-[#a0a7b5]"
           )}
         >
           {secNum}

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import Accordion from "@/components/Accordion/Accordion";
 import Carousel from "@/components/Caruosel";
 import StickyNavbar from "@/components/navbar/StickyNavbar";
@@ -12,7 +14,15 @@ export default function Home() {
   return (
     <main className="">
       <div className="main-banner">
-        <img src="/images/main-banner.jpg" />
+        {/* <img  alt="mountains" src="/images/main-banner.jpg" /> */}
+        <Image
+          src="/images/main-banner.jpg"
+          alt="mountains"
+          width={0}
+          height={0}
+          sizes="100vw"
+          className="w-full"
+        />
       </div>
       <StickyNavbar />
 
@@ -28,7 +38,15 @@ export default function Home() {
             freeExpand
           />
         </div>
-        <img src="/images/history.jpg" />
+        {/* <img alt="history" src="/images/history.jpg" /> */}
+        <Image
+          src="/images/history.jpg"
+          alt="history"
+          width={0}
+          height={0}
+          sizes="100vw"
+          className="w-full"
+        />
         <div className="max-sm:relative max-sm:bg-[#fff] pt-1 sm:pt-7 pb-10 bg-[#1216408a] absolute w-full bottom-0">
           <Carousel />
         </div>

@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 import AccordionContent from "./AccordionContent";
 import { Bebas_Neue } from "next/font/google";
 import { cn } from "@/lib/utils";
@@ -109,7 +110,19 @@ export default function AccordionPanel({
           open={onlyOneOpen ? isIndexOpen(i) : open}
         >
           <div className="ggggggggggggggg ">
-            <img src={bgImg} className="sm:object-cover sm:min-h-[250px]" />
+            {/* <img
+              alt={heading}
+              src={bgImg}
+              className="sm:object-cover sm:min-h-[250px]"
+            /> */}
+            <Image
+              src={bgImg}
+              alt={heading}
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-full sm:object-cover sm:min-h-[250px]"
+            />
             <div className="max-w-[1200px]"></div>
           </div>
           {<Schedule scheduleItem={scheduleItems[i]} />}

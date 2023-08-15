@@ -39,6 +39,7 @@ function Carousel() {
           return (
             <div key={i} className="carousel-cell w-[32%] px-[3px] sm:w-1/4">
               <img
+                alt="slider"
                 className="carousel-cell-image"
                 data-flickity-lazyload={`/images/slider/${img}`}
               />

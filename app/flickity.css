@@ -54,7 +54,7 @@ https://flickity.metafizzy.co
 }
 @media (max-width: 640px) {
   .flickity-button {
-    display: none;
+    /* display: none; */
   }
 }
 .flickity-button:hover {
@@ -160,6 +160,7 @@ https://flickity.metafizzy.co
   margin: 0 auto;
 }
 .carousel-cell {
+  /* height: 100%; */
 }
 .carousel-cell-image {
   transition: opacity 0.4s;

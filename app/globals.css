@@ -16,6 +16,9 @@ html {
   color: #fff;
   border-color: #fff;
 }
+.main-banner {
+  /* max-height: 695px; */
+}
 
 footer {
   background-color: #50516b;

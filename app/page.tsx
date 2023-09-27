@@ -4,6 +4,7 @@ import Accordion from "@/components/Accordion/Accordion";
 import Carousel from "@/components/Caruosel";
 import StickyNavbar from "@/components/navbar/StickyNavbar";
 import SectionHeader from "@/components/SectionHeader";
+import MainBanner from "@/components/MainBanner";
 
 const sectionsContent = [
   "we can do our best together. we can do our best together. we can do our best together. we can do our best together. we can do our best together. we can do our best together. we can do our best together. we can do our best together. we can do our best together. we can do our best together. we can do our best together. we can do our best together. we can do our best together. we can do our best together. we can do our best together. we can do our best together.",
@@ -13,17 +14,7 @@ const sectionsContent = [
 export default function Home() {
   return (
     <main className="">
-      <div className="main-banner">
-        {/* <img  alt="mountains" src="/images/main-banner.jpg" /> */}
-        <Image
-          src="/images/main-banner.jpg"
-          alt="mountains"
-          width={0}
-          height={0}
-          sizes="100vw"
-          className="w-full"
-        />
-      </div>
+      <MainBanner />
       <StickyNavbar />
 
       <section className="relative">
@@ -38,14 +29,13 @@ export default function Home() {
             freeExpand
           />
         </div>
-        {/* <img alt="history" src="/images/history.jpg" /> */}
         <Image
           src="/images/history.jpg"
           alt="history"
           width={0}
           height={0}
           sizes="100vw"
-          className="w-full"
+          className="w-full max-sm:hidden"
         />
         <div className="max-sm:relative max-sm:bg-[#fff] pt-1 sm:pt-7 pb-10 bg-[#1216408a] absolute w-full bottom-0">
           <Carousel />

@@ -8,7 +8,7 @@ const StickyNavbar = () => {
   const scrollPosition = useScroll();
   const [isStiky, setStiky] = useState(false);
 
-  const elemRef = useRef<HTMLInputElement>(null);
+  const elemRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (elemRef.current) {

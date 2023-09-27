@@ -2,18 +2,21 @@
 import React from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { cn } from "@/lib/utils";
+import useMedia from "@/hooks/useMedia";
 
 interface LogoProps {
   isFooter?: boolean;
 }
 const Logo: React.FC<LogoProps> = ({ isFooter }) => {
   const router = useRouter();
+  const isSmallScreen = useMedia("(max-width: 640px)");
+
+  if (isSmallScreen && isFooter) {
+    return "";
+  }
 
   return (
-    <div
-      className={cn("flex items-center space-x-2", isFooter && "max-sm:hidden")}
-    >
+    <div className={"flex items-center space-x-2"}>
       <Image
         onClick={() => router.push("/")}
         className="cursor-pointer border border-gray-400 rounded-full"

@@ -3,11 +3,15 @@
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import Image from "next/image";
 
-const MainBanne = () => {
+const MainBanner = () => {
   const elemRef = useRef<HTMLDivElement>(null);
-  const windowWidth = window.innerWidth;
-  //   1.93 = is our main banner ratio (width/heigh)
-  const elementH = windowWidth / 1.939 + "px";
+  let elementH = "";
+  if (typeof window !== "undefined") {
+    const windowWidth = window.innerWidth;
+    //   1.93 = is our main banner ratio (width/heigh)
+    elementH = windowWidth / 1.939 + "px";
+  }
+
   // To prevent the rest body elements from jumping to the top berfore loading main banner
   const handleFunc = (img: HTMLImageElement) => {
     if (img.parentElement) {
@@ -30,4 +34,4 @@ const MainBanne = () => {
   );
 };
 
-export default MainBanne;
+export default MainBanner;

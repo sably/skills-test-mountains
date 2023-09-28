@@ -1,8 +1,21 @@
 "use client";
+import { useEffect, useState } from "react";
 
 import Logo from "./navbar/Logo";
 
 const Footer = () => {
+  const [isClient, setIsClient] = useState(false);
+
+  //Ensure that the component renders the same content server-side as it does during the initial
+  //client-side render to prevent a hydration mismatch
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) {
+    return "";
+  }
+
   return (
     <footer className="relative w-full">
       <div className="absolute w-full h-full overlay opacity-80"></div>

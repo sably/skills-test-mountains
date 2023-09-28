@@ -1,6 +1,8 @@
 "use client";
+
 import React, { useState } from "react";
 import Image from "next/image";
+
 import AccordionContent from "./AccordionContent";
 import { Bebas_Neue } from "next/font/google";
 import { cn } from "@/lib/utils";
@@ -81,11 +83,9 @@ export default function AccordionPanel({
                   "TabButtons-listItem flex px-5 py-2",
                   bebas_Neue.className
                 )}
-                // className="TabButtons-listItem flex px-6 py-2.5"
               >
                 <a
                   aria-controls={`panel-${id}`}
-                  // aria-selected={isIndexOpen(i)}
                   className="TabButtons-button text-[#b0b4be] font-medium text-[26px] leading-none"
                   href={`#${id}`}
                   id={`tab-${id}`}
@@ -110,11 +110,6 @@ export default function AccordionPanel({
           open={onlyOneOpen ? isIndexOpen(i) : open}
         >
           <div className="ggggggggggggggg ">
-            {/* <img
-              alt={heading}
-              src={bgImg}
-              className="sm:object-cover sm:min-h-[250px]"
-            /> */}
             <Image
               src={bgImg}
               alt={heading}

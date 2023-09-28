@@ -1,6 +1,6 @@
 "use client";
+
 import { cn } from "@/lib/utils";
-// import { Bebas_Neue } from "next/font/google";
 import { Oswald } from "next/font/google";
 
 const OswaldFont = Oswald({

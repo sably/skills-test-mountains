@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+
 import useMedia from "@/hooks/useMedia";
 import AccordionPanel from "./AccordionPanel";
 
@@ -39,8 +40,6 @@ const Accordion = () => {
       panels={panelItems}
     />
   );
-
-  //   return isLargeScreen ? <Tabs items={panels} /> : <Accordion items={panels} />;
 };
 
 export default Accordion;

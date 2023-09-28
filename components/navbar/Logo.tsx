@@ -1,7 +1,9 @@
 "use client";
+
 import React from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+
 import useMedia from "@/hooks/useMedia";
 
 interface LogoProps {

@@ -1,5 +1,7 @@
 "use client";
+
 import { useEffect, useRef, useState } from "react";
+
 import Navbar from "./Navbar";
 import useScroll from "@/hooks/useScroll";
 import { cn } from "@/lib/utils";

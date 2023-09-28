@@ -1,6 +1,7 @@
 "use client";
 //@ts-ignore
 import Flickity from "react-flickity-component";
+
 import "@/app/flickity.css";
 
 const flickityOptions = {
@@ -36,7 +37,7 @@ function Carousel() {
           return (
             <div key={i} className="carousel-cell w-[90%] px-[8px] sm:w-1/4">
               <img
-                alt="slider"
+                alt="sliderImage"
                 className="carousel-cell-image max-sm:w-[100%] max-sm:rounded-lg"
                 data-flickity-lazyload={`/images/slider/${img}`}
               />
